@@ -191,3 +191,2121 @@ Processing UsersController#index (for 127.0.0.1 at 2009-07-31 17:25:03) [GET]
   [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" [0m
 Rendering users/index
 Completed in 38ms (View: 5, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-04 17:05:55) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-04 17:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-04 17:06:55) [GET]
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering users/index
+Completed in 45ms (View: 12, DB: 1) | 200 OK [http://localhost/users/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-04 17:06:59) [GET]
+Rendering users/new
+Rendered users/_form (12.3ms)
+Completed in 62ms (View: 30, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2009-08-04 17:16:31) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-08-04 17:16:41) [GET]
+Rendering user_sessions/new
+Rendered user_sessions/_form (3.2ms)
+Completed in 56ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 17:16:51) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"admin", "login"=>"admin"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".login) = 'admin') LIMIT 1[0m
+Rendering user_sessions/new
+Rendered user_sessions/_form (1.7ms)
+Completed in 28ms (View: 4, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 17:17:06) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"arun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".login) = 'arun') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "login_count" = 2, "updated_at" = '2009-08-04 11:47:06', "perishable_token" = '9mqe0s3DzGJ_k0dot1hF', "last_request_at" = '2009-08-04 11:47:06', "last_login_at" = '2009-07-31 11:35:23', "last_login_ip" = '127.0.0.1', "current_login_at" = '2009-08-04 11:47:06' WHERE "id" = 1[0m
+Completed in 168ms (View: 1, DB: 2) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 17:32:42) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"arun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".login) = 'arun') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "login_count" = 3, "updated_at" = '2009-08-04 12:02:42', "perishable_token" = 'OekxE9-TZYTAdaRbuEek', "last_request_at" = '2009-08-04 12:02:42', "last_login_at" = '2009-08-04 11:47:06', "current_login_at" = '2009-08-04 12:02:42' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/homes
+Completed in 58ms (DB: 2) | 302 Found [http://localhost/user_sessions]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:32:42) [GET]
+Rendering homes/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:32:51) [GET]
+  Parameters: {"method"=>"detroy"}
+Rendering homes/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/homes?method=detroy]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:33:06) [GET]
+  Parameters: {"method"=>"detroy"}
+Rendering homes/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/homes?method=detroy]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:33:08) [GET]
+  Parameters: {"method"=>"destroy"}
+Rendering homes/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/homes?method=destroy]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:33:34) [GET]
+  Parameters: {"method"=>"destroy"}
+Rendering homes/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/homes?method=destroy]
+
+
+Processing HomesController#show (for 127.0.0.1 at 2009-08-04 17:33:37) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionView::MissingTemplate (Missing template homes/show.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-04 17:34:10) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:34:16) [GET]
+Rendering homes/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:35:35) [GET]
+Rendering homes/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/homes]
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2009-08-04 17:35:37) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2009-08-04 17:36:51) [GET]
+  Parameters: {"id"=>"destroy"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, logout, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:36:58) [GET]
+Rendering homes/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/homes]
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2009-08-04 17:37:01) [GET]
+  Parameters: {"id"=>"logout"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, logout, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-04 17:39:54) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:44:21) [GET]
+Rendering homes/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/homes]
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 17:44:23) [GET]
+
+NameError (undefined local variable or method `current_user_session' for #<UserSessionsController:0xb68afd20>):
+  app/controllers/user_sessions_controller.rb:16:in `destroy'
+  app/controllers/user_sessions_controller.rb:20:in `logout'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.6ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 17:46:46) [GET]
+
+NameError (undefined local variable or method `current_user_session' for #<UserSessionsController:0xb67be858>):
+  app/controllers/user_sessions_controller.rb:16:in `destroy'
+  app/controllers/user_sessions_controller.rb:20:in `logout'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 17:48:58) [GET]
+
+NameError (undefined local variable or method `current_user_session' for #<UserSessionsController:0xb6947f1c>):
+  app/controllers/user_sessions_controller.rb:16:in `destroy'
+  app/controllers/user_sessions_controller.rb:20:in `logout'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 17:49:22) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:19:23', "perishable_token" = 'iGKcn27X7Qnt2HnFWzWU', "last_request_at" = '2009-08-04 12:19:23' WHERE "id" = 1[0m
+Completed in 146ms (View: 141, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 17:49:27) [GET]
+
+NameError (undefined local variable or method `current_user_session' for #<UserSessionsController:0xb691c970>):
+  app/controllers/user_sessions_controller.rb:16:in `destroy'
+  app/controllers/user_sessions_controller.rb:20:in `logout'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.6ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 17:49:31) [GET]
+
+NameError (undefined local variable or method `current_user_session' for #<UserSessionsController:0xb6aced90>):
+  app/controllers/user_sessions_controller.rb:16:in `destroy'
+  app/controllers/user_sessions_controller.rb:20:in `logout'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 17:52:42) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:22:42', "perishable_token" = 'GXSC3ZE3_Wu8UZLPvTcJ', "last_request_at" = '2009-08-04 12:22:42' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 45ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-08-04 17:52:42) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered user_sessions/_form (1.8ms)
+Completed in 31ms (View: 12, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 18:01:30) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"arun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".login) = 'arun') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "login_count" = 4, "updated_at" = '2009-08-04 12:31:30', "perishable_token" = 'j3EfxwmzMvpQ-ISC0eIX', "last_request_at" = '2009-08-04 12:31:30', "last_login_at" = '2009-08-04 12:02:42', "current_login_at" = '2009-08-04 12:31:30' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/homes
+Completed in 54ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 18:01:30) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:31:30', "perishable_token" = 'vkuXdci_rRyaHS8QQkVF', "last_request_at" = '2009-08-04 12:31:30' WHERE "id" = 1[0m
+Completed in 43ms (View: 39, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 18:01:49) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:31:49', "perishable_token" = 'YqV_j17mPfoxiFxF79se', "last_request_at" = '2009-08-04 12:31:49' WHERE "id" = 1[0m
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 18:03:04) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:33:04', "perishable_token" = 'BW-ooUl6rD6i4g9yoD5T', "last_request_at" = '2009-08-04 12:33:04' WHERE "id" = 1[0m
+Completed in 60ms (View: 52, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-04 18:03:05) [GET]
+  Parameters: {"actioon"=>"new"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 12:33:06', "perishable_token" = 'Aqy21Fdg007TZdf5jO-8', "last_request_at" = '2009-08-04 12:33:06' WHERE "id" = 1[0m
+Completed in 76ms (View: 58, DB: 2) | 200 OK [http://localhost/users?actioon=new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-04 18:03:20) [GET]
+  Parameters: {"actioon"=>"new"}
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:33:20', "perishable_token" = '2dTHqMZikkgm2xGPwe8i', "last_request_at" = '2009-08-04 12:33:20' WHERE "id" = 1[0m
+Completed in 138ms (View: 102, DB: 3) | 200 OK [http://localhost/users?actioon=new]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 18:03:23) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:33:23', "perishable_token" = 'wjczYkOi7yCek-H_1FiL', "last_request_at" = '2009-08-04 12:33:23' WHERE "id" = 1[0m
+Completed in 54ms (View: 47, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-04 18:03:24) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.3ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:33:24', "perishable_token" = 'oGw3ZDQ_Sy5le92yf187', "last_request_at" = '2009-08-04 12:33:24' WHERE "id" = 1[0m
+Completed in 74ms (View: 38, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-08-04 18:03:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "user"=>{"password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}}
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;35;1mUser Exists (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = '') LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '5c825b8a0c48276cfdc3f3c10aa109a563417ee274ede4e449e87a458912ec3ab69692ee1edc530b9e3761baf4e85f7f7cd9c82ec973c1810a781c616fa6b513') LIMIT 1[0m
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."single_access_token" = 'KRS9ZGjg1Uqpb7wsTrBt') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.2ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 12:33:54', "perishable_token" = 'zlPI6KOtjxEdYz1NrSa5', "last_request_at" = '2009-08-04 12:33:54' WHERE "id" = 1[0m
+Completed in 83ms (View: 21, DB: 2) | 200 OK [http://localhost/users]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 20:53:54) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (11.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 15:23:54', "perishable_token" = 'QTcz15k7ul7fWPQyPc2S', "last_request_at" = '2009-08-04 15:23:54' WHERE "id" = 1[0m
+Completed in 324ms (View: 308, DB: 13) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 20:56:13) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 15:26:13', "perishable_token" = 'aEUId0Lx9e6rdfmHjaEI', "last_request_at" = '2009-08-04 15:26:13' WHERE "id" = 1[0m
+Completed in 53ms (View: 47, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-04 22:04:27) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (15.2ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 16:34:27', "perishable_token" = '3PhXRjfimbV4z7vqZUxA', "last_request_at" = '2009-08-04 16:34:27' WHERE "id" = 1[0m
+Completed in 500ms (View: 467, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 22:04:53) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 16:34:53', "perishable_token" = 'TaCRRGqRizz4D56EXH2l', "last_request_at" = '2009-08-04 16:34:53' WHERE "id" = 1[0m
+Completed in 144ms (View: 140, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 22:04:56) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 16:34:56', "perishable_token" = 'a1-iVobSCNoGbuV7uIRM', "last_request_at" = '2009-08-04 16:34:56' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 50ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-08-04 22:04:56) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered user_sessions/_form (1.8ms)
+Completed in 88ms (View: 67, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 22:05:03) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"aarun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".login) = 'aarun') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered user_sessions/_form (1.8ms)
+Completed in 28ms (View: 6, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 22:05:09) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"arun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".login) = 'arun') LIMIT 1[0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE "users" SET "login_count" = 5, "updated_at" = '2009-08-04 16:35:10', "perishable_token" = 'mtY9k0zVCqS1jr5H_LrH', "last_request_at" = '2009-08-04 16:35:10', "last_login_at" = '2009-08-04 12:31:30', "current_login_at" = '2009-08-04 16:35:10' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/homes
+Completed in 120ms (DB: 2) | 302 Found [http://localhost/user_sessions]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 22:05:10) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 16:35:10', "perishable_token" = 'tV5vkZj0qK-tjhQ2X_qU', "last_request_at" = '2009-08-04 16:35:10' WHERE "id" = 1[0m
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-04 22:05:12) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.6ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 16:35:12', "perishable_token" = 'UQ2Qa4VXlEdPGG7itG1x', "last_request_at" = '2009-08-04 16:35:12' WHERE "id" = 1[0m
+Completed in 69ms (View: 37, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-08-04 22:05:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "user"=>{"password_confirmation"=>"some", "password"=>"some", "login"=>"some", "email"=>"some@some.com"}}
+  [4;35;1mUser Exists (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'some@some.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'some') LIMIT 1[0m
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '492b9fcbabc45cc65c4a82c671575109a29a6d6f027a6896bbe86bff8a67e794d203f3fe11913722d0b20801569f95e1d503fce4469955f9c01996e5ed8ca024') LIMIT 1[0m
+  [4;36;1mUser Exists (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."single_access_token" = 'Aag1D2wmV7fSOSC-4EmT') LIMIT 1[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 16:35:28', "perishable_token" = '_f3EOMfB8b8jvv495gNO', "last_request_at" = '2009-08-04 16:35:28' WHERE "id" = 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("single_access_token", "last_request_at", "created_at", "crypted_password", "perishable_token", "updated_at", "failed_login_count", "current_login_ip", "password_salt", "current_login_at", "persistence_token", "login_count", "last_login_ip", "login", "last_login_at", "email") VALUES('Aag1D2wmV7fSOSC-4EmT', NULL, '2009-08-04 16:35:28', 'd5d991bd2a08149e986601bd997eede792e1469273dd6ff3c0fea27fedeb7c5794854f7946fe930a80c6a9efed0732d5230d026ad4a73bcca28eb20d7d51f2c5', 'sArYVn6r4rvX9y7BS01j', '2009-08-04 16:35:28', 0, NULL, 'socUSydQ9qeMmICrJFCC', NULL, '492b9fcbabc45cc65c4a82c671575109a29a6d6f027a6896bbe86bff8a67e794d203f3fe11913722d0b20801569f95e1d503fce4469955f9c01996e5ed8ca024', 0, NULL, 'some', NULL, 'some@some.com')[0m
+Redirected to http://localhost:3000/users
+Completed in 331ms (DB: 2) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-04 22:05:28) [GET]
+  [4;36;1mUser Load (2.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 16:35:28', "perishable_token" = '-JldwCHwONh3rK4RzPgo', "last_request_at" = '2009-08-04 16:35:28' WHERE "id" = 1[0m
+Completed in 292ms (View: 267, DB: 4) | 200 OK [http://localhost/users]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 22:05:39) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 16:35:39', "perishable_token" = 'UYB-G6O-ZubTOZPjjQGa', "last_request_at" = '2009-08-04 16:35:39' WHERE "id" = 1[0m
+Completed in 140ms (View: 133, DB: 2) | 200 OK [http://localhost/homes]
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090731110824)
+Migrating to CreateItem (20090804163841)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "item" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090804163841')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("item")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:21:18) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.5ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:22:29) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (132.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:22:35) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:22:35) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:22:36) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:22:36) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItem (20090804163841)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "item"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090804163841'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090731110824)
+Migrating to CreateItems (20090804165852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090804165852')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090804165852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "items"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090804165852'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090731110824)
+Migrating to CreateItems (20090804165852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "name" varchar(255), "#<ActiveRecord::ConnectionAdapters::TableDefinition:0xb720edbc>" varchar(255)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090804165852')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090804165852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "items"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090804165852'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090731110824)
+Migrating to CreateItems (20090804165852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090804165852')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 22:49:17) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:19:17', "perishable_token" = '3sIt5HsPyo8mXS-iKNBV', "last_request_at" = '2009-08-04 17:19:17' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 135ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-08-04 22:49:17) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered user_sessions/_form (1.6ms)
+Completed in 36ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 22:49:25) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"arun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".login) = 'arun') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "login_count" = 6, "updated_at" = '2009-08-04 17:19:25', "perishable_token" = 'r3X_9oQ8FFKqWA-A5_ut', "last_request_at" = '2009-08-04 17:19:25', "last_login_at" = '2009-08-04 16:35:10', "current_login_at" = '2009-08-04 17:19:25' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/homes
+Completed in 42ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 22:49:25) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:19:25', "perishable_token" = 'x9SeNZcp7IM4aCK3Ite9', "last_request_at" = '2009-08-04 17:19:25' WHERE "id" = 1[0m
+Completed in 41ms (View: 37, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 22:49:33) [GET]
+
+NameError (uninitialized constant ItemsController::Item):
+  app/controllers/items_controller.rb:14:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090804165852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "items"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090804165852'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090731110824)
+Migrating to CreateItems (20090804172317)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090804172317')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:03:22) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+
+ActionView::TemplateError (undefined method `empty' for []:Array) on line #2 of app/views/items/index.html.erb:
+1: <h3>List of Items:</h3>
+2: <% if @items.empty %>
+3:   <p>Hooray! No Item Here!</p>
+4: <% else %>
+5:   <% @items.each do |i| %>>
+
+    app/views/items/index.html.erb:2
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:03:51) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:33:52', "perishable_token" = 'gflEXOvo6ME8iC3Dl2-6', "last_request_at" = '2009-08-04 17:33:52' WHERE "id" = 1[0m
+Completed in 250ms (View: 232, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:04:06) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+
+ActionView::TemplateError (undefined method `nil' for []:Array) on line #2 of app/views/items/index.html.erb:
+1: <h3>List of Items:</h3>
+2: <% if @items.nil %>
+3:   <p>Hooray! No Item Here!</p>
+4: <% else %>
+5:   <% @items.each do |i| %>>
+
+    app/views/items/index.html.erb:2
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:04:31) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:34:31', "perishable_token" = 'n60c-0gZKagEjw-dLg8R', "last_request_at" = '2009-08-04 17:34:31' WHERE "id" = 1[0m
+Completed in 65ms (View: 45, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:04:38) [GET]
+Rendering template within layouts/application
+Rendering items/new
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:34:38', "perishable_token" = 'vfB5HOpmz6_BPx9Npcb0', "last_request_at" = '2009-08-04 17:34:38' WHERE "id" = 1[0m
+Completed in 52ms (View: 41, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:12:00) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:42:00', "perishable_token" = 'ebeWSIFnCf0DIVoblRl1', "last_request_at" = '2009-08-04 17:42:00' WHERE "id" = 1[0m
+Completed in 54ms (View: 39, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:12:03) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.7ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:42:03', "perishable_token" = 'euWqjErCL-V7VRMt7ZGP', "last_request_at" = '2009-08-04 17:42:03' WHERE "id" = 1[0m
+Completed in 59ms (View: 49, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:12:10) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"grossary"}}
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:42:10', '2009-08-04 17:42:10')[0m
+Redirected to http://localhost:3000/items
+Completed in 37ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:12:10) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:42:11', "perishable_token" = 'DjwSjVP7XQCovdihlmzl', "last_request_at" = '2009-08-04 17:42:11' WHERE "id" = 1[0m
+Completed in 131ms (View: 121, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:13:35) [GET]
+  [4;35;1mItem Load (1.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.8ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:43:35', "perishable_token" = 'gIvumXOns2eTmUhpslFt', "last_request_at" = '2009-08-04 17:43:35' WHERE "id" = 1[0m
+Completed in 76ms (View: 49, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:13:41) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.8ms)
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:43:41', "perishable_token" = 'WXUowbrH3btDAcbYlTR9', "last_request_at" = '2009-08-04 17:43:41' WHERE "id" = 1[0m
+Completed in 61ms (View: 45, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:13:44) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"sadsda"}}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:43:44', '2009-08-04 17:43:44')[0m
+Redirected to http://localhost:3000/items
+Completed in 40ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:13:44) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:43:44', "perishable_token" = 'xTdkLtpNVEgehGOjF5XM', "last_request_at" = '2009-08-04 17:43:44' WHERE "id" = 1[0m
+Completed in 65ms (View: 40, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:14:49) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.3ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:44:49', "perishable_token" = 'ASDORBo7qOX54DYHbbs0', "last_request_at" = '2009-08-04 17:44:49' WHERE "id" = 1[0m
+Completed in 50ms (View: 40, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:14:58) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"ffff"}}
+  [4;36;1mItem Create (1.1ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES('ffff', '2009-08-04 17:44:58', '2009-08-04 17:44:58')[0m
+Redirected to http://localhost:3000/items
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:14:58) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:44:58', "perishable_token" = 'UXls6QonRSSoAWMaQ6Mk', "last_request_at" = '2009-08-04 17:44:58' WHERE "id" = 1[0m
+Completed in 48ms (View: 39, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:15:38) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:45:38', "perishable_token" = '62IeiLbshloYt3KqCEWo', "last_request_at" = '2009-08-04 17:45:38' WHERE "id" = 1[0m
+Completed in 59ms (View: 49, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:16:03) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:46:03', "perishable_token" = 'rNGE2VFFIHJG7sSm_mD2', "last_request_at" = '2009-08-04 17:46:03' WHERE "id" = 1[0m
+Completed in 123ms (View: 114, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:40) [GET]
+  [4;36;1mItem Load (2.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:40', "perishable_token" = 'e1xbsOh-RoUHWp5BO5Xn', "last_request_at" = '2009-08-04 17:53:40' WHERE "id" = 1[0m
+Completed in 60ms (View: 43, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:45) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:45', '2009-08-04 17:53:45')[0m
+Redirected to http://localhost:3000/items
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:45) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:45', "perishable_token" = 'eVA3PG4iZh2pWx9ks63k', "last_request_at" = '2009-08-04 17:53:45' WHERE "id" = 1[0m
+Completed in 46ms (View: 36, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:48) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:48', '2009-08-04 17:53:48')[0m
+Redirected to http://localhost:3000/items
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:48) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:48', "perishable_token" = 'KLJrwPt98RvGUxDDDQgy', "last_request_at" = '2009-08-04 17:53:48' WHERE "id" = 1[0m
+Completed in 123ms (View: 111, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:55) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:55', '2009-08-04 17:53:55')[0m
+Redirected to http://localhost:3000/items
+Completed in 36ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:55) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:55', "perishable_token" = 'YG-WSEXiPz7LwN1fo517', "last_request_at" = '2009-08-04 17:53:55' WHERE "id" = 1[0m
+Completed in 60ms (View: 51, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:58) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:58', '2009-08-04 17:53:58')[0m
+Redirected to http://localhost:3000/items
+Completed in 26ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:58) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:58', "perishable_token" = 'nC2T5GTpg2c6xnJufKnz', "last_request_at" = '2009-08-04 17:53:58' WHERE "id" = 1[0m
+Completed in 45ms (View: 36, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:59) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:59', '2009-08-04 17:53:59')[0m
+Redirected to http://localhost:3000/items
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:59) [GET]
+  [4;36;1mItem Load (1.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:59', "perishable_token" = 'V--z-lTyMDjyGI2TN513', "last_request_at" = '2009-08-04 17:53:59' WHERE "id" = 1[0m
+Completed in 66ms (View: 53, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:59) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:59', '2009-08-04 17:53:59')[0m
+Redirected to http://localhost:3000/items
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:23:59) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:53:59', '2009-08-04 17:53:59')[0m
+Redirected to http://localhost:3000/items
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:23:59) [GET]
+  [4;35;1mItem Load (1.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:53:59', "perishable_token" = 'BFsH_sZJZ-lLgZR6EWdL', "last_request_at" = '2009-08-04 17:53:59' WHERE "id" = 1[0m
+Completed in 44ms (View: 35, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:24:25) [GET]
+  [4;36;1mItem Load (2.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:54:26', "perishable_token" = '6mjEICIHxdykJdtcmtms', "last_request_at" = '2009-08-04 17:54:26' WHERE "id" = 1[0m
+Completed in 134ms (View: 116, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:24:28) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:54:28', '2009-08-04 17:54:28')[0m
+Redirected to http://localhost:3000/items
+Completed in 26ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:24:28) [GET]
+  [4;36;1mItem Load (1.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:54:28', "perishable_token" = 'rKELK7UzaRYI6eQRPqa1', "last_request_at" = '2009-08-04 17:54:28' WHERE "id" = 1[0m
+Completed in 50ms (View: 39, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:24:30) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.3ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:54:30', '2009-08-04 17:54:30')[0m
+Redirected to http://localhost:3000/items
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:24:30) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:54:30', "perishable_token" = 'DD_SvVtJNZ2W1Ky_iliD', "last_request_at" = '2009-08-04 17:54:30' WHERE "id" = 1[0m
+Completed in 55ms (View: 44, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:24:31) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES(NULL, '2009-08-04 17:54:31', '2009-08-04 17:54:31')[0m
+Redirected to http://localhost:3000/items
+Completed in 25ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:24:31) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:54:31', "perishable_token" = 'mHtYWaUkcHCJ0calmMQB', "last_request_at" = '2009-08-04 17:54:31' WHERE "id" = 1[0m
+Completed in 50ms (View: 39, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:25:14) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:55:14', "perishable_token" = '071SKHqlkc72ljcrrn90', "last_request_at" = '2009-08-04 17:55:14' WHERE "id" = 1[0m
+Completed in 127ms (View: 116, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:25:15) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:55:15', "perishable_token" = '8RszM8f7kqPxR0acieHg', "last_request_at" = '2009-08-04 17:55:15' WHERE "id" = 1[0m
+Completed in 46ms (View: 36, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:25:16) [GET]
+  [4;35;1mItem Load (1.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:55:16', "perishable_token" = 'icM2PPPgoFzHORLRYBIK', "last_request_at" = '2009-08-04 17:55:16' WHERE "id" = 1[0m
+Completed in 59ms (View: 49, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:25:17) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:55:17', "perishable_token" = '74XI-vvpXWGWwFBXgDc3', "last_request_at" = '2009-08-04 17:55:17' WHERE "id" = 1[0m
+Completed in 49ms (View: 38, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:25:21) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:55:21', "perishable_token" = '7My3hHm7KK6raz91FViV', "last_request_at" = '2009-08-04 17:55:21' WHERE "id" = 1[0m
+Completed in 51ms (View: 41, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:26:44) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:56:44', "perishable_token" = 'qyKJK6MgA-2GLtCYRJEn', "last_request_at" = '2009-08-04 17:56:44' WHERE "id" = 1[0m
+Completed in 61ms (View: 48, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-04 23:26:46) [GET]
+  Parameters: {"id"=>"10"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, current_user, current_user_session, delete, edit, index, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:27:13) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:57:13', "perishable_token" = 'r2RYC2UyB1vjn0rJ9Yf_', "last_request_at" = '2009-08-04 17:57:13' WHERE "id" = 1[0m
+Completed in 128ms (View: 117, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-04 23:27:14) [GET]
+  Parameters: {"id"=>"10"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, current_user, current_user_session, delete, edit, index, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:27:17) [GET]
+  [4;36;1mItem Load (3.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:57:17', "perishable_token" = 'qwoVvrFP6krRxLnr_w9R', "last_request_at" = '2009-08-04 17:57:17' WHERE "id" = 1[0m
+Completed in 74ms (View: 53, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:27:18) [GET]
+  [4;35;1mItem Load (3.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:57:18', "perishable_token" = 'QZXCMBS8MkDLAWBoTmYB', "last_request_at" = '2009-08-04 17:57:18' WHERE "id" = 1[0m
+Completed in 76ms (View: 49, DB: 5) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-04 23:27:20) [GET]
+  Parameters: {"id"=>"3"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, current_user, current_user_session, delete, edit, index, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:27:23) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:57:23', "perishable_token" = 'n8EicFPnafQk8kfv4v14', "last_request_at" = '2009-08-04 17:57:23' WHERE "id" = 1[0m
+Completed in 146ms (View: 135, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:27:52) [GET]
+  [4;35;1mItem Load (1.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:57:52', "perishable_token" = 'hj8WPKM07fcuwtpm1Boi', "last_request_at" = '2009-08-04 17:57:52' WHERE "id" = 1[0m
+Completed in 70ms (View: 55, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#9 (for 127.0.0.1 at 2009-08-04 23:27:53) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+
+ActionController::UnknownAction (No action responded to 9. Actions: create, current_user, current_user_session, destroy, edit, index, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#9 (for 127.0.0.1 at 2009-08-04 23:27:56) [POST]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+
+ActionController::UnknownAction (No action responded to 9. Actions: create, current_user, current_user_session, destroy, edit, index, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:27:59) [GET]
+  [4;36;1mItem Load (4.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:57:59', "perishable_token" = '6fsGE7M6dyZzAIgmXPxD', "last_request_at" = '2009-08-04 17:57:59' WHERE "id" = 1[0m
+Completed in 75ms (View: 52, DB: 5) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:14) [GET]
+  [4;35;1mItem Load (1.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:14', "perishable_token" = 'ZVXJYOPYGoezLOJneIWX', "last_request_at" = '2009-08-04 17:58:14' WHERE "id" = 1[0m
+Completed in 143ms (View: 53, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:16) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"7"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 7[0m
+Redirected to http://localhost:3000/items
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:16) [GET]
+  [4;36;1mItem Load (1.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:16', "perishable_token" = 'byJV3f4YTZRHFotQhKTS', "last_request_at" = '2009-08-04 17:58:16' WHERE "id" = 1[0m
+Completed in 54ms (View: 43, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:17) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"8"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;36;1mItem Destroy (0.4ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/items
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/items/8]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:17) [GET]
+  [4;35;1mItem Load (8.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:17', "perishable_token" = 'ZoKDx4i6DjYGausjOfN7', "last_request_at" = '2009-08-04 17:58:17' WHERE "id" = 1[0m
+Completed in 63ms (View: 45, DB: 10) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:18) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"9"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 9) [0m
+  [4;35;1mItem Destroy (0.3ms)[0m   [0mDELETE FROM "items" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/items
+Completed in 312ms (DB: 1) | 302 Found [http://localhost/items/9]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:18) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:18', "perishable_token" = '--sPfuEj2iz1hXS2uwhL', "last_request_at" = '2009-08-04 17:58:18' WHERE "id" = 1[0m
+Completed in 330ms (View: 319, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:19) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"10"}
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 10) [0m
+  [4;36;1mItem Destroy (0.3ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/items
+Completed in 351ms (DB: 1) | 302 Found [http://localhost/items/10]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:20) [GET]
+  [4;35;1mItem Load (1.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:20', "perishable_token" = 'rWzjLRWryMlZhV5ZlCcj', "last_request_at" = '2009-08-04 17:58:20' WHERE "id" = 1[0m
+Completed in 51ms (View: 41, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:20) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"11"}
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 11) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/items
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/items/11]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:20) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (2.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:21', "perishable_token" = 'lx2mPbrSv0fjr4jh0wDo', "last_request_at" = '2009-08-04 17:58:21' WHERE "id" = 1[0m
+Completed in 177ms (View: 166, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:21) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"12"}
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 12) [0m
+  [4;36;1mItem Destroy (0.5ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/items
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/items/12]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:21) [GET]
+  [4;35;1mItem Load (1.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:21', "perishable_token" = '956X_aog-eg0kugPlxlt', "last_request_at" = '2009-08-04 17:58:21' WHERE "id" = 1[0m
+Completed in 48ms (View: 38, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:22) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"13"}
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 13) [0m
+  [4;35;1mItem Destroy (0.7ms)[0m   [0mDELETE FROM "items" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/items
+Completed in 25ms (DB: 1) | 302 Found [http://localhost/items/13]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:22) [GET]
+  [4;36;1mItem Load (1.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:22', "perishable_token" = 'hTuTSilcFRqM_Mky-3Mr', "last_request_at" = '2009-08-04 17:58:22' WHERE "id" = 1[0m
+Completed in 48ms (View: 38, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:22) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"6"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;36;1mItem Destroy (0.3ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/items
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/items/6]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:23) [GET]
+  [4;35;1mItem Load (1.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:23', "perishable_token" = 'ydLTDCoFar3Qwp0JHjH9', "last_request_at" = '2009-08-04 17:58:23' WHERE "id" = 1[0m
+Completed in 48ms (View: 38, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:23) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"5"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+  [4;35;1mItem Destroy (0.9ms)[0m   [0mDELETE FROM "items" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/items
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/items/5]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:23) [GET]
+  [4;36;1mItem Load (2.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:23', "perishable_token" = 'du-uWHqrpTZywBv0Vla-', "last_request_at" = '2009-08-04 17:58:23' WHERE "id" = 1[0m
+Completed in 307ms (View: 294, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-04 23:28:23) [GET]
+  Parameters: {"id"=>"4"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, current_user, current_user_session, destroy, edit, index, and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:26) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"4"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+  [4;36;1mItem Destroy (0.3ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/items
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:26) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:26', "perishable_token" = 'ohwUeC9Mi5bf22VZ7ng1', "last_request_at" = '2009-08-04 17:58:26' WHERE "id" = 1[0m
+Completed in 125ms (View: 115, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:28) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"2"}
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mItem Destroy (0.3ms)[0m   [0mDELETE FROM "items" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/items
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:28) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:28', "perishable_token" = '814ppTThbDvbfQ_L0U5o', "last_request_at" = '2009-08-04 17:58:28' WHERE "id" = 1[0m
+Completed in 44ms (View: 35, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:29) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"1"}
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 1) [0m
+  [4;36;1mItem Destroy (0.6ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/items
+Completed in 410ms (DB: 1) | 302 Found [http://localhost/items/1]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:29) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:29', "perishable_token" = 'ofzGpk-GvqWHxpYtb6iO', "last_request_at" = '2009-08-04 17:58:29' WHERE "id" = 1[0m
+Completed in 54ms (View: 44, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:28:30) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"3"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/items
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:28:31) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:31', "perishable_token" = '0XFYJfZCuubwnKiR2GBS', "last_request_at" = '2009-08-04 17:58:31' WHERE "id" = 1[0m
+Completed in 56ms (View: 46, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:28:38) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.2ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:58:38', "perishable_token" = 'RUFNx_5TawKmu1psxUTp', "last_request_at" = '2009-08-04 17:58:38' WHERE "id" = 1[0m
+Completed in 53ms (View: 40, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:29:02) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"item 1"}}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES('item 1', '2009-08-04 17:59:02', '2009-08-04 17:59:02')[0m
+Redirected to http://localhost:3000/items
+Completed in 52ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:29:02) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:59:02', "perishable_token" = 'ZFllFnKlvrpdHvNclSuq', "last_request_at" = '2009-08-04 17:59:02' WHERE "id" = 1[0m
+Completed in 44ms (View: 35, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:29:49) [GET]
+  [4;35;1mItem Load (1.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (1.1ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 17:59:49', "perishable_token" = '-4YpylUELmNGOSD5kAod', "last_request_at" = '2009-08-04 17:59:49' WHERE "id" = 1[0m
+Completed in 148ms (View: 131, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:29:50) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"14"}
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 14) [0m
+  [4;35;1mItem Destroy (0.3ms)[0m   [0mDELETE FROM "items" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/items
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/items/14]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:29:50) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 17:59:50', "perishable_token" = 'vEhLOaGtzkqZnZGZoDOV', "last_request_at" = '2009-08-04 17:59:50' WHERE "id" = 1[0m
+Completed in 49ms (View: 38, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:30:48) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.0ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:00:48', "perishable_token" = 'mcRoqi_pehsRL-XENKZ1', "last_request_at" = '2009-08-04 18:00:48' WHERE "id" = 1[0m
+Completed in 55ms (View: 41, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:30:56) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"adsjaj"}}
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES('adsjaj', '2009-08-04 18:00:57', '2009-08-04 18:00:57')[0m
+Redirected to http://localhost:3000/items
+Completed in 45ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:30:57) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:00:57', "perishable_token" = 'OmrqbxqQFSY47zTfbtmE', "last_request_at" = '2009-08-04 18:00:57' WHERE "id" = 1[0m
+Completed in 118ms (View: 108, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:30:59) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"15"}
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Destroy (0.8ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 15[0m
+Redirected to http://localhost:3000/items
+Completed in 32ms (DB: 2) | 302 Found [http://localhost/items/15]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:30:59) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 18:00:59', "perishable_token" = 'tRUdokOgjh3cg5kF2Ryo', "last_request_at" = '2009-08-04 18:00:59' WHERE "id" = 1[0m
+Completed in 48ms (View: 39, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:33:09) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:03:09', "perishable_token" = 'UTuY2kdSUeODRqG6s5vu', "last_request_at" = '2009-08-04 18:03:09' WHERE "id" = 1[0m
+Completed in 102ms (View: 85, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:33:16) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (17.7ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:03:16', "perishable_token" = '9VxbSbyZ9Rxnzbly2jCY', "last_request_at" = '2009-08-04 18:03:16' WHERE "id" = 1[0m
+Completed in 89ms (View: 55, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:33:23) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"item 1"}}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES('item 1', '2009-08-04 18:03:23', '2009-08-04 18:03:23')[0m
+Redirected to http://localhost:3000/items
+Completed in 96ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:33:24) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:03:24', "perishable_token" = 'A73t7y_M7ENwydR4xu_Z', "last_request_at" = '2009-08-04 18:03:24' WHERE "id" = 1[0m
+Completed in 59ms (View: 48, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:34:51) [GET]
+  [4;35;1mItem Load (2.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 18:04:51', "perishable_token" = 'UyFwdI-LVplHXUBpBkel', "last_request_at" = '2009-08-04 18:04:51' WHERE "id" = 1[0m
+Completed in 75ms (View: 58, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:35:01) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (2.9ms)
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 18:05:01', "perishable_token" = 'iWFYVTuYTxTtOLWOr-vC', "last_request_at" = '2009-08-04 18:05:01' WHERE "id" = 1[0m
+Completed in 44ms (View: 34, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:35:03) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>"dfafa"}}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES('dfafa', '2009-08-04 18:05:03', '2009-08-04 18:05:03')[0m
+Redirected to http://localhost:3000/items
+Completed in 49ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:35:03) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 18:05:03', "perishable_token" = 'PKfTYisstBM3uNuIRbTV', "last_request_at" = '2009-08-04 18:05:03' WHERE "id" = 1[0m
+Completed in 121ms (View: 40, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:35:18) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:05:18', "perishable_token" = 'ZrwklwghTXazfodZ0MuB', "last_request_at" = '2009-08-04 18:05:18' WHERE "id" = 1[0m
+Completed in 70ms (View: 53, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 23:42:00) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:12:00', "perishable_token" = 'aQ6ap0RaekWlBgCkQ53c', "last_request_at" = '2009-08-04 18:12:00' WHERE "id" = 1[0m
+Completed in 57ms (View: 43, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 23:42:57) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:12:57', "perishable_token" = 'Yr_mFGNCmJLeJjAm8bxa', "last_request_at" = '2009-08-04 18:12:57' WHERE "id" = 1[0m
+Completed in 58ms (View: 50, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 23:43:08) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:13:08', "perishable_token" = 'i9PrYx-Nzqz9zVgD5EjE', "last_request_at" = '2009-08-04 18:13:08' WHERE "id" = 1[0m
+Completed in 140ms (View: 131, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:43:11) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (5.1ms)
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:13:11', "perishable_token" = '5U90ZUs2twbuONf325NE', "last_request_at" = '2009-08-04 18:13:11' WHERE "id" = 1[0m
+Completed in 87ms (View: 71, DB: 2) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:43:13) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>""}}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES('', '2009-08-04 18:13:13', '2009-08-04 18:13:13')[0m
+Redirected to http://localhost:3000/items
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:43:13) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:13:13', "perishable_token" = '1_pPS083rht7hST97ASU', "last_request_at" = '2009-08-04 18:13:13' WHERE "id" = 1[0m
+Completed in 55ms (View: 44, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-04 23:43:15) [DELETE]
+  Parameters: {"authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "id"=>"18"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 18) [0m
+  [4;36;1mItem Destroy (0.3ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 18[0m
+Redirected to http://localhost:3000/items
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/items/18]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:43:15) [GET]
+  [4;35;1mItem Load (1.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-04 18:13:15', "perishable_token" = '_uSesgHzn-IxrtA83mDg', "last_request_at" = '2009-08-04 18:13:15' WHERE "id" = 1[0m
+Completed in 153ms (View: 137, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-04 23:44:16) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:14:16', "perishable_token" = 'aAG_tOct-bDzEe9yR-0y', "last_request_at" = '2009-08-04 18:14:16' WHERE "id" = 1[0m
+Completed in 54ms (View: 41, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:44:17) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.2ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:14:17', "perishable_token" = 'FxYbCJw5Yktbi_gHZGsf', "last_request_at" = '2009-08-04 18:14:17' WHERE "id" = 1[0m
+Completed in 50ms (View: 40, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:44:19) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>""}}
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (2.4ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:14:19', "perishable_token" = 'p6isoGbTh70nuxvw2U_J', "last_request_at" = '2009-08-04 18:14:19' WHERE "id" = 1[0m
+Completed in 234ms (View: 216, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:44:50) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>""}}
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.3ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:14:50', "perishable_token" = 'AUIfplr71Ywk9dO01XQi', "last_request_at" = '2009-08-04 18:14:50' WHERE "id" = 1[0m
+Completed in 131ms (View: 115, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-04 23:44:55) [POST]
+  Parameters: {"commit"=>"create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "item"=>{"name"=>""}}
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (3.8ms)
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:14:55', "perishable_token" = 'Ghc2eMwsoZJAPUtXFWW8', "last_request_at" = '2009-08-04 18:14:55' WHERE "id" = 1[0m
+Completed in 72ms (View: 40, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing UserSessionsController#logout (for 127.0.0.1 at 2009-08-04 23:45:56) [GET]
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:15:56', "perishable_token" = '1sB0uBf7J_2F4f7F3jZU', "last_request_at" = '2009-08-04 18:15:56' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 58ms (DB: 2) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-08-04 23:45:56) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered user_sessions/_form (1.5ms)
+Completed in 33ms (View: 12, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-08-04 23:46:13) [POST]
+  Parameters: {"commit"=>"Create", "user_session"=>{"password"=>"arun", "login"=>"arun"}, "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k="}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".login) = 'arun') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "login_count" = 7, "updated_at" = '2009-08-04 18:16:13', "perishable_token" = '2d-S7fmPgYm7GvE0L8Bv', "last_request_at" = '2009-08-04 18:16:13', "last_login_at" = '2009-08-04 17:19:25', "current_login_at" = '2009-08-04 18:16:13' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/homes
+Completed in 91ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing HomesController#index (for 127.0.0.1 at 2009-08-04 23:46:13) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:16:13', "perishable_token" = 'oR5KsOEGgIevQQgt0PGO', "last_request_at" = '2009-08-04 18:16:13' WHERE "id" = 1[0m
+Completed in 43ms (View: 39, DB: 1) | 200 OK [http://localhost/homes]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-04 23:46:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (6.2ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:16:19', "perishable_token" = 'ctAld5VT4lXDUAfArlWW', "last_request_at" = '2009-08-04 18:16:19' WHERE "id" = 1[0m
+Completed in 98ms (View: 80, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-04 23:46:22) [GET]
+Rendering template within layouts/application
+Rendering items/new
+Rendered items/_form (5.0ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:16:22', "perishable_token" = '2pGFL3oRsXLRkh_Jd3NN', "last_request_at" = '2009-08-04 18:16:22' WHERE "id" = 1[0m
+Completed in 61ms (View: 44, DB: 1) | 200 OK [http://localhost/items/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-04 23:46:27) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.7ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:16:27', "perishable_token" = '8HnJMvvQToFAm4gH0AbM', "last_request_at" = '2009-08-04 18:16:27' WHERE "id" = 1[0m
+Completed in 48ms (View: 29, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-08-04 23:46:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "user"=>{"password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}}
+  [4;35;1mUser Exists (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = '') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '8010e0c629ba71c229d6b53258da059bc5b72073549536db9759b49b66ba31a52087537698cab63a856ea72f8731ee568605e15cf0432d44487da9f2db7c79fe') LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."single_access_token" = 'utm4nkfQoVndAMPzhIxh') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (3.9ms)
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:16:28', "perishable_token" = 'GYXc7pi-JKn5nDtveH5p', "last_request_at" = '2009-08-04 18:16:28' WHERE "id" = 1[0m
+Completed in 58ms (View: 21, DB: 2) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-08-04 23:46:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"F88W9NJn8PEqv/T7WYPH/GKw9/bhoJbG0KnfbdTL72k=", "user"=>{"password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}}
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = '') LIMIT 1[0m
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '9449b7b60678fe7b41cb1431c9f03d2a921331fb8f8c610a8c8d0a32c454cc4392a932703a53729fd46efc4d262e85c0f1c31daea6cf29c7958508d2711e5baa') LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."single_access_token" = 'FYuuc5cRvjvYkrqEiZcC') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.0ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2009-08-04 18:16:41', "perishable_token" = 'pNS_dcBowzdlhsZWKttx', "last_request_at" = '2009-08-04 18:16:41' WHERE "id" = 1[0m
+Completed in 85ms (View: 25, DB: 2) | 200 OK [http://localhost/users]

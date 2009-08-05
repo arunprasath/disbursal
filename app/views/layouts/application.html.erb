@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Disbursal</title>
+  </head>
+  <body>
+    <% if current_user %>
+      <%= link_to "Logout", :controller => 'user_sessions',
+                           :action => 'logout' %>
+    <% end %>
+    <%= @content_for_layout %>
+  </body>
+</html>

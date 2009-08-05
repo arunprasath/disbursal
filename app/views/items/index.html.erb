@@ -1,0 +1,12 @@
+<h3>List of Items:</h3>
+<% if @items.blank? %>
+  <p>Hooray! No Item Here!</p>
+<% else %>
+  <% @items.each do |i| %>
+  <li>
+    <%= i.name %>
+    <%= link_to 'Destroy',i, {:cnfirm => "Are you Sure?",:method => :delete} %>
+  </li>
+  <% end %>
+<% end %><br />
+<%= link_to "New Item", new_item_path %><br />
